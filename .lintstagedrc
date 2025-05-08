@@ -1,0 +1,1 @@
+{ "*.{ts,scss,html}": ["eslint --fix"] }

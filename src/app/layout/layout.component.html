@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Mi Aplicación</span>
+</mat-toolbar>
+
+<div>
+  <mat-drawer-container autosize [hasBackdrop]="isMobile()">
+    <mat-drawer #drawer mode="side" [opened]="!isMobile()">
+      <nav>
+        <mat-nav-list>
+          <mat-list-item>Inicio</mat-list-item>
+          <mat-list-item>Perfil</mat-list-item>
+          <mat-list-item>Configuración</mat-list-item>
+        </mat-nav-list>
+      </nav>
+    </mat-drawer>
+
+    <main class="h-(--content-height) p-4">
+      <p>Bienvenido al contenido principal de la aplicación.</p>
+      <section>
+        <router-outlet></router-outlet>
+      </section>
+    </main>
+  </mat-drawer-container>
+</div>
