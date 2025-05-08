@@ -1,2 +1,2 @@
-npm run lint
-npm run prettier
+npx lint-staged
+npx pretty-quick
