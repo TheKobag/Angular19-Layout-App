@@ -1,5 +1,7 @@
 # Angular19 Layout App
 
+This is a sample project in Angular 19 with Angular material and some utilities like prettier or linter.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
 
 ## Development server
@@ -41,18 +43,16 @@ This will compile your project and store the build artifacts in the `dist/` dire
 To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
 ```bash
-ng test
+npm run test
 ```
 
-## Running end-to-end tests
+## Running prettier
 
-For end-to-end (e2e) testing, run:
+To execute prettier to format all the code, run
 
 ```bash
-ng e2e
+npm run prettier
 ```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
 
